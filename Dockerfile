@@ -1,4 +1,13 @@
-FROM alpine:3.4
+#
+# Node.JS Docker Image for Service Foundry Platform
+#
+# VERSION : 1.0
+#
+FROM servicefoundry/docker-base
+
+MAINTAINER Service Foundry Team <service.foundry@gmail.com>
+
+ENV REFRESHED_AT 2016-10-10
 
 ENV VERSION=v6.8.0 NPM_VERSION=3
 
