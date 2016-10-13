@@ -10,4 +10,5 @@ MAINTAINER Service Foundry Team <service.foundry@gmail.com>
 ENV REFRESHED_AT 2016-10-10
 
 RUN set -x \
-    && apk add --no-cache --update --no-progress nodejs
+    && apk add --no-cache --update --no-progress nodejs \
+    && rm -rf /etc/ssl /var/cache/apk/*
