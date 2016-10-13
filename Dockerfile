@@ -40,7 +40,7 @@ RUN apk add --no-cache make gcc g++ python linux-headers paxctl libgcc libstdc++
     npm install -g npm@${NPM_VERSION} && \
     find /usr/lib/node_modules/npm -name test -o -name .bin -type d | xargs rm -rf; \
   fi && \
-  apk del curl make gcc g++ python linux-headers paxctl gnupg ${DEL_PKGS} && \
+  apk del make gcc g++ python linux-headers paxctl gnupg ${DEL_PKGS} && \
   rm -rf /etc/ssl /node-${VERSION}.tar.gz /SHASUMS256.txt.asc /node-${VERSION} ${RM_DIRS} \
     /usr/share/man /tmp/* /var/cache/apk/* /root/.npm /root/.node-gyp /root/.gnupg \
     /usr/lib/node_modules/npm/man /usr/lib/node_modules/npm/doc /usr/lib/node_modules/npm/html
